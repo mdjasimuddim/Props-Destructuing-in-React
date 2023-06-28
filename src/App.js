@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Card from './Card'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className = "heading1">Todo App</h1>
+      <Card heading2 = "Bangladesh" heading4 = "Bangladesh is a small country in south asia"/>
+      <Card heading2 = "India" heading4 = "India is the second largest country"/>
+      <Card heading2 = "Pakistan" heading4 = "Pakistan is a south asian country"/>
+      <Card heading2 = "Nepal" heading4 = "Nepal is the south asian country"/>
+      <Card heading2 = "Srilanka" heading4 = "Srilanka is a south asian country"/> 
+      <Card heading2 = "Maldeep" heading4 = "Maldeep is a south asian country"/> 
     </div>
-  );
+  )
 }
-
-export default App;
